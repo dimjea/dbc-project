@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>User Documentation</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="../styles/doc-styles.css" rel="stylesheet" type="text/css" />
+        <link href="../styles/bootstrap.min.css" rel="stylesheet" />
+        <script src="../js/bootstrap/popper.js"></script>
+        <script src="../js/bootstrap/bootstrap.bundle.min.js"></script>
+        <script defer src="../js/fontawesome/brands.js"></script>
+        <script defer src="../js/fontawesome/regular.js"></script>
+        <script defer src="../js/fontawesome/solid.js"></script>
+        <script defer src="../js/fontawesome/fontawesome.min.js"></script>
+        <link href="../styles/fontawesome.min.css" rel="stylesheet" type="text/css" />
+        <script defer src="../js/doc.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="" title="logo" alt="logo" id="logo" /></a>
+                <p id="site-title">User Documentation</p>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="en.doc-index.html" role="button" data-bs-toggle="dropdown">Contact Cards</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#intro">Introduction</a></li>
+                            <li><a class="dropdown-item" href="#using-contact-cards">Using Contact Cards</a></li>
+                          </ul>
+                    </li>
+                    <li class="nav-item drop-down">
+                        <a class="nav-link" href="#">Campaigns</a>
+                    </li>
+                    <li class="nav-item drop-down">
+                        <a class="nav-link" href="#">Interactions</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container" style="padding: 100px 20px;">
+          <div class="row">
+              <div class="col-lg-3 left-sidebar">
+                  <p class="lead">Table of Content</p>
+                  <div class="container mt-3">
+                      <ul class="nav flex-column">
+                          <li class="nav-item">
+                              <a class="nav-link" href="#contact-cards">Contact Cards</a>
+                              <ul>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#intro">Introduction</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="#using-contact-cards">Using Contact Cards</a>
+                                      <ul>
+                                          <li class="nav-item">
+                                              <a class="nav-link" href="#creating-new-contact">Creating a New Contact</a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link" href="#searching-contact">Searching for a Contact</a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link" href="#editing-contact">Editing a Contact</a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link" href="#deleting-contact">Deleting a Contact</a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+                            
+                <div class="col-lg-9" id="search-homepage">
+                    <h1 id="contact-cards" class="anchor-heading">Contact Cards <a class="anchor-link" href="#contact-cards"></a></h1>
+                    <h2 id="intro" class="anchor-heading">Introduction <a class="anchor-link" href="#intro"></a></h2>
+                    <p>Contact cards make it easy for you to manage your contacts by associating incoming and outgoing interactions with specific people. This helps keep track of them in the future.</p>
+                    <div class="alert alert-info"><p><strong>Note:</strong></p> 
+                        <p>The contact card history keeps track of all previous interactions and links them to specific contacts.</p>
+                    </div>
+                    <p>Each contact that you interact with has the following set of properties associated with the group they are assigned to:</p>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Property</th>
+                            <th>Icon</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <p><strong>First name</strong></p>
+                            </td>
+                            <td>
+                              <p><i class="fas fa-user"></i></p>
+                            </td>
+                            <td>
+                              <p>Indicates the first name of a contact.</p> 
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p><strong>Last name</strong></p>
+                            </td>
+                            <td>
+                              <p><i class="fas fa-user"></i></p>
+                            </td>
+                            <td>
+                              <p>Indicates the last name of a contact.</p> 
+                              <p></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p><strong>Phone</strong></p>
+                            </td>
+                            <td>
+                              <p><i class="fas fa-phone-alt"></i></p>
+                            </td>
+                            <td>
+                              <p>Indicates the phone number(s) of a contact.</p> 
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p><strong>Email</strong></p>
+                            </td>
+                            <td>
+                              <p><i class="fas fa-envelope"></i></p>
+                            </td>
+                            <td>
+                              <p>Indicates the email address(es) of a contact.</p> 
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p><strong>Contact ID</strong></p>
+                            </td>
+                            <td>
+                            
+                            </td>
+                            <td>
+                              <p>Indicates the ID of a contact.</p> 
+                              <div class="alert alert-info"><p><strong>Note:</strong></p>
+                                <p>Your user interface automatically creates and assigns an ID to each contact, and this ID cannot be edited.</p>
+                            </div>        
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="col-lg-9">
+                        <h2 id="using-contact-cards" class="anchor-heading">Using Contact Cards <a class="anchor-link" href="#using-contact-cards"></a></h2>
+                        <h3 id="creating-new-contact" class="anchor-heading">Creating a New Contact ... <a class="anchor-link" href="#creating-new-contact"></a></h3>
+                        <p></p>
+                        <p>In your user interface, you have two options to create a new contact. You can either create them from scratch, or from an ongoing interaction.</p>
+                        <h4 id="creating-from-scratch" class="anchor-heading">... From Scratch <a class="anchor-link" href="#creating-from-scratch"></a></h4>
+                        <p>To create a new contact from scratch, follow these steps:</p>
+
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Step</th>
+                              <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <p><strong>1.</strong></p>
+                              </td>
+                              <td>
+                                <p>In the left menu of your user interface, click <strong>Contacts</strong> <i class="fas fa-users"></i> > <strong>+ Add contact</strong>.</p> 
+                                <p><i>A new <strong>Unknown contact</strong> card appears.</i></p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p><strong>2.</strong></p>
+                              </td>
+                              <td>
+                                <p>Fill in the <strong>Unknown contact</strong> card as follows:</p>
+                                <ul>
+                                    <li><p>In the <strong>First name</strong> <i class="fas fa-user"></i> field, enter the first name of the contact.</p>
+                                      <div class="alert alert-warning"><p><strong>Caution:</strong></p> 
+                                        <p>This <strong>First name</strong> <i class="fas fa-user"></i> field is mandatory and its content must be at least 3 characters long.</p>
+                                    </div>                    
+                                      <div class="codeblock-title bg-light">Example:</div>
+                                      <pre class="codeblock bg-light">John</pre>
+                                    </li>
+                                    <li><p>In the <strong>Last name</strong> <i class="fas fa-user"></i> field, enter the last name of the contact.</p>
+                                      <div class="codeblock-title bg-light">Example:</div>
+                                      <pre class="codeblock bg-light">Doe</pre>
+                                    </li>
+                                    <li><p>In the <strong>Phone number</strong> <i class="fas fa-phone-alt"></i> field, enter the phone number of the contact.</p>
+                                      <div class="alert alert-warning"><p><strong>Caution:</strong></p> 
+                                        <p>Make sure you start this phone number by adding a <strong>+</strong> symbol followed by the necesary calling code (e.g., <code>+33</code>).</p>
+                                        <p>To find the comprehensive list of calling codes, refer to the <a href="https://en.wikipedia.org/wiki/List_of_country_calling_codes">Wikipedia documentation on country calling codes</a>.</p>
+                                      </div>                    
+                                      <div class="codeblock-title bg-light">Example:</div>
+                                      <pre class="codeblock bg-light">+33765435676</pre>
+                                        <div class="alert alert-info"><p><strong>Note:</strong></p> 
+                                            <p>You can associate several phone numbers with a specific contact. To do so:</p>
+                                            <ol>
+                                              <li><p>Enter the first phone number in the <strong>Phone number</strong> <i class="fas fa-phone-alt"></i> field.</p></li>
+                                              <li><p>Click the <i class="fas fa-plus"></i> icon.</p>
+                                                  <p><i>A new field appears under the <strong>Phone number</strong> <i class="fas fa-phone-alt"></i> field.</i></p>
+                                              </li>
+                                              <li><p>Fill in this new field with the desired phone number.</p>
+                                                <div class="codeblock-title bg-light">Example:</div>
+                                                <pre class="codeblock bg-light">+33467890775</pre>  
+                                              </li>
+                                              <li>
+                                                <p>Repeat step <strong>2</strong> and step <strong>3</strong> as many times as necesary.</p>
+                                              </li>
+                                          </ol>                   
+                                    </li>
+                                    <li><p>In the <strong>Email address</strong> <i class="fas fa-envelope"></i> field, enter the email address of the contact.</p>
+                                      <div class="codeblock-title bg-light">Example:</div>
+                                      <pre class="codeblock bg-light">john.doe@dbc.com</pre>
+                                        <div class="alert alert-info"><p><strong>Note:</strong></p> 
+                                            <p>You can associate several email addresses with a specific contact. To do so:</p>
+                                            <ol>
+                                                <li><p>Enter the first email address in the <strong>Email address</strong> <i class="fas fa-envelope"></i> field.</p></li>
+                                                <li><p>Add a <a class="definition" data-bs-toggle="tooltip" data-bs-placement="bottom" title="The semicolon ; character serves as a separator.">semicolon</a> <code>;</code> character and a whitespace character after the first email address.</p>
+                                                </li>
+                                                <li><p>Enter an additional email address in the <strong>Email address</strong> <i class="fas fa-envelope"></i> field.</p>
+                                                  <div class="codeblock-title bg-light">Example:</div>
+                                                  <pre class="codeblock bg-light">john.doe@dbc.com; louis.dupont@dbc.com</pre>
+                                                </li>
+                                                <li>
+                                                  <p>Repeat step <strong>2</strong> and step <strong>3</strong> as many times as necesary.</p>
+                                                </li>
+                                            </ol>
+                                        </div>                    
+                                    </li>
+                                </ul> 
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p><strong>3.</strong></p>
+                              </td>
+                              <td>
+                                <p>Click the <strong>Save</strong> <i class="fas fa-check-circle"></i> button to complete the creation of a new contact.</p> 
+                                <p><i>Congratulations! You have created a new contact.</i></p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <h4 id="creating-from-ongoing" class="anchor-heading">... From an ongoing interaction <a class="anchor-link" href="#creating-from-ongoing"></a></h4>
+                        <p>In your user interface, when you have an ongoing interaction, the platform automatically indicates who you are interacting with.</p> 
+                        <div class="alert alert-info"><p><strong>Note:</strong></p> 
+                            <p>When this interaction is with an existing contact:</p> 
+                            <ul>
+                                <li><p>their contact card appears,</p></li>
+                                <li><p>their personal details are displayed (e.g., first name, last name, etc.), and</p></li>
+                                <li><p>the interaction is automatically assigned to this contact card.</p></li>
+                            </ul>
+                        </div>
+                        <p>When this interaction is with an unknown contact, an <strong>Unknown contact</strong> card appears with the <strong>Phone number</strong> <i class="fas fa-phone-alt"></i> field filled with the unknown contact's phone number.</p>
+                        <div class="codeblock-title bg-light">Example:</div>
+                        <pre class="codeblock bg-light">+33765435676</pre>
+                        <div class="alert alert-info"><p><strong>Note:</strong></p> 
+                            <p>If the phone number of this unknown contact has been used in campaigns, you can select a campaign ID if you want to process this call as an outgoing call and display the corresponding call script.</p>
+                            <p>For more information, see the documentation on <a href="#">Campaigns</a>.</p> 
+                        </div>
+                        <div class="alert alert-info"><p><strong>Note:</strong></p> 
+                            <p>During an ongoing interaction, you can find out if you have previously interacted with an unknown contact. To do so, unfold the <strong>Most recent interactions</strong> menu.</p>
+                            <p>In addition, in case the user interface finds a connection between the phone number of an unkown contact and the email address of an existing contact (e.g., in the email signature of an email you have received), it displays the email or email thread under the <strong>Most recent interactions</strong> menu. This feature allows you to easily find and continue an ongoing email thread.</p>
+                            <p>For more information, see the documentation on <a href="#">Interactions</a>.</p> 
+                        </div>
+                        <p>To create a new contact from an ongoing interaction, follow these steps:</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Step</th>
+                              <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <p><strong>1.</strong></p>
+                              </td>
+                              <td>
+                                <p>Fill in the <strong>Unknown contact</strong> card as follows:</p>
+                                <ul>
+                                    <li><p>In the <strong>First name</strong> <i class="fas fa-user"></i> field, enter the first name of the contact.</p>
+                                      <div class="alert alert-warning"><p><strong>Caution:</strong></p> 
+                                        <p>This <strong>First name</strong> <i class="fas fa-user"></i> field is mandatory and its content must be at least 3 characters long.</p>
+                                    </div>                    
+                                      <div class="codeblock-title bg-light">Example:</div>
+                                      <pre class="codeblock bg-light">John</pre>
+                                    </li>
+                                    <li><p>In the <strong>Last name</strong> <i class="fas fa-user"></i> field, enter the last name of the contact.</p>
+                                      <div class="codeblock-title bg-light">Example:</div>
+                                      <pre class="codeblock bg-light">Doe</pre>  
+                                    </li>
+                                    <li><p>In the <strong>Phone number</strong> <i class="fas fa-phone-alt"></i> field, enter the phone number of the contact.</p>
+                                      <div class="alert alert-warning"><p><strong>Caution:</strong></p> 
+                                        <p>Make sure you start this phone number by adding a <strong>+</strong> symbol followed by the necesary calling code (e.g., <code>+33</code>).</p>
+                                        <p>To find the comprehensive list of calling codes, refer to the <a href="https://en.wikipedia.org/wiki/List_of_country_calling_codes">Wikipedia documentation on country calling codes</a>.</p>
+                                      </div>                    
+                                      <div class="codeblock-title bg-light">Example:</div>
+                                      <pre class="codeblock bg-light">+33765435676</pre>
+                                        <div class="alert alert-info"><p><strong>Note:</strong></p> 
+                                            <p>You can associate several phone numbers with a specific contact. To do so:</p>
+                                            <ol>
+                                                <li><p>Enter the first phone number in the <strong>Phone number</strong> <i class="fas fa-phone-alt"></i> field.</p></li>
+                                                <li><p>Click the <i class="fas fa-plus"></i> icon.</p>
+                                                    <p><i>A new field appears under the <strong>Phone number</strong> <i class="fas fa-phone-alt"></i> field.</i></p>
+                                                </li>
+                                                <li><p>Fill in this new field with the desired phone number.</p>
+                                                  <div class="codeblock-title bg-light">Example:</div>
+                                                  <pre class="codeblock bg-light">+33467890775</pre>  
+                                                </li>
+                                                <li>
+                                                  <p>Repeat step <strong>2</strong> and step <strong>3</strong> as many times as necesary.</p>
+                                                </li>
+                                            </ol>
+                                        </div>                    
+                                    </li>
+                                    <li><p>In the <strong>Email address</strong> field, enter the email address of the contact.</p>
+                                      <div class="codeblock-title bg-light">Example:</div>
+                                      <pre class="codeblock bg-light">john.doe@dbc.com</pre>
+                                        <div class="alert alert-info">
+                                            <p><strong>Note:</strong></p> 
+                                            <p>You can associate several email addresses with a specific contact. To do so:</p>
+                                            <ol>
+                                              <li><p>Enter the first email address in the <strong>Email address</strong> <i class="fas fa-envelope"></i> field.</p></li>
+                                              <li><p>Add a <a class="definition" data-bs-toggle="tooltip" data-bs-placement="bottom" title="The semicolon ; character serves as a separator.">semicolon</a> <code>;</code> character and a whitespace character after the first email address.</p>
+                                              </li>
+                                              <li><p>Enter an additional email address in the <strong>Email address</strong> <i class="fas fa-envelope"></i> field.</p>
+                                                <div class="codeblock-title bg-light">Example:</div>
+                                                <pre class="codeblock bg-light">john.doe@dbc.com; louis.dupont@dbc.com</pre> 
+
+                                              </li>
+                                              <li>
+                                                <p>Repeat step <strong>2</strong> and step <strong>3</strong> as many times as necesary.</p>
+                                              </li>
+                                          </ol>
+                                        </div>
+                  
+                                    </li>
+                                </ul> 
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <p><strong>3.</strong></p>
+                              </td>
+                              <td>
+                                <p>Click the <strong>Save</strong> <i class="fas fa-check-circle"></i> button to complete the creation of a new contact.</p> 
+                                <p><i>Congratulations! You have created a new contact from an ongoing interaction.</i></p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <h3 id="searching-contact" class="anchor-heading">Searching for a Contact <a class="anchor-link" href="#searching-contact"></a></h3> 
+                          <p>To search for a contact, follow these steps:</p>
+
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>Step</th>
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <p><strong>1.</strong></p>
+                                  </td>
+                                  <td>
+                                    <p>In the left menu of your user interface, click <strong>Contacts</strong> <i class="fas fa-users"></i>.</p> 
+                                    <p><i>The <strong>Contacts</strong> page appears.</i></p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p><strong>2.</strong></p>
+                                  </td>
+                                  <td>
+                                    <p>In the <strong>Contacts</strong> search bar, search for a contact.</p>
+                                    <div class="alert alert-info"><p><strong>Note:</strong></p> 
+                                        <p>If you have filled in someone's personal information before, you can find their contact details by searching using their first or last name, their email address, or their phone number.</p>
+                                    </div>                    
+                                    <p><i>The contact appears in the search results.</i></p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                       
+                        <h3 id="editing-contact" class="anchor-heading">Editing a Contact <a class="anchor-link" href="#editing-contact"></a></h3>
+                          <p>To edit a contact, follow these steps:</p>
+
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>Step</th>
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <p><strong>1.</strong></p>
+                                  </td>
+                                  <td>
+                                    <p>In the left menu of your user interface, click <strong>Contacts</strong> <i class="fas fa-users"></i>.</p> 
+                                    <p><i>The <strong>Contacts</strong> page appears.</i></p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p><strong>2.</strong></p>
+                                  </td>
+                                  <td>
+                                    <p>In the <strong>Contacts</strong> search bar, search for the contact to edit.</p>
+                                    <div class="alert alert-info"><p><strong>Note:</strong></p> 
+                                        <p>If you have filled in someone's personal information before, you can find their contact details by searching using their first or last name, their email address, or their phone number.</p>
+                                    </div>                    
+                                    <p><i>The contact appears in the search results.</i></p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <p><strong>3.</strong></p>
+                                  </td>
+                                  <td>
+                                    <p>Select the contact.</p>
+                                    <p><i>A right menu displaying the name of the contact appears on the right side of your user interface.</i></p> 
+                                  </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                      <p><strong>4.</strong></p>
+                                    </td>
+                                    <td>
+                                      <p>In the right menu displaying the full name of the contact, click the <strong>More actions</strong> <i class="fas fa-ellipsis-v"></i> button.</p> 
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p><strong>5.</strong></p>
+                                    </td>
+                                    <td>
+                                      <p>Click <strong>Edit</strong>.</p>
+                                      <p><i>The contact's associated contact card appears.</i></p> 
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p><strong>6.</strong></p>
+                                    </td>
+                                    <td>
+                                      <p>Edit the contact as desired.</p> 
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <p><strong>7.</strong></p>
+                                    </td>
+                                    <td>
+                                      <p>Click the <strong>Save</strong> <i class="fas fa-check-circle"></i> button to update the contact.</p> 
+                                      <p><i>Congratulations! You have edited and updated the contact.</i></p>
+                                    </td>
+                                  </tr>        
+                              </tbody>
+                            </table>
+                            <h3 id="deleting-contact" class="anchor-heading">Deleting a Contact <a class="anchor-link" href="#deleting-contact"></a></h3> 
+                              <p>To delete a contact, follow these steps:</p>
+    
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th>Step</th>
+                                      <th>Action</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <p><strong>1.</strong></p>
+                                      </td>
+                                      <td>
+                                        <p>In the left menu of your user interface, click <strong>Contacts</strong> <i class="fas fa-users"></i>.</p> 
+                                        <p><i>The <strong>Contacts</strong> page appears.</i></p>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p><strong>2.</strong></p>
+                                      </td>
+                                      <td>
+                                        <p>In the <strong>Contacts</strong> search bar, search for the contact to edit.</p>
+                                        <div class="alert alert-info"><p><strong>Note:</strong></p> 
+                                            <p>If you have filled in someone's personal information before, you can find their contact details by searching using their first or last name, their email address, or their phone number.</p>
+                                        </div>                    
+                                        <p><i>The contact appears in the search results.</i></p>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <p><strong>3.</strong></p>
+                                      </td>
+                                      <td>
+                                        <p>Select the contact.</p>
+                                        <p><i>A right menu displaying the name of the contact appears on the right side of your user interface.</i></p>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                          <p><strong>4.</strong></p>
+                                        </td>
+                                        <td>
+                                          <p>In the right menu displaying the full name of the contact, click the <strong>More actions</strong> <i class="fas fa-ellipsis-v"></i> button.</p> 
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p><strong>5.</strong></p>
+                                        </td>
+                                        <td>
+                                          <p>Click <strong>Delete contact</strong>.</p>
+                                          <div class="alert alert-danger">
+                                            <p><strong>Warning:</strong></p> <p>Once you delete a contact, you cannot recover it. If you ever need it in the future, you will have to recreate it again from scratch.</p>
+                                          </div>         
+                                          <p><i>A confirmation overlay appears.</i></p> 
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                          <p><strong>6.</strong></p>
+                                        </td>
+                                        <td>
+                                          <p>Click <strong>Yes delete</strong> to confirm the deletion of the contact.</p>
+                                          <p><i>Congratulations! You have deleted the contact.</i></p> 
+                                        </td>
+                                      </tr>
+                                  </tbody>
+                                </table>
+  
+                </div>                    
+            </div>
+        </div>
+      </div>
+		<script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+              return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+            </script>
+    </body>
+</html>
