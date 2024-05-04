@@ -10,3 +10,6 @@ To make the documentation more cohesive and user-friendly, I have decided to str
 
 ## Caution ⚠️
 Although screenshots have been deliberately omitted from this repository, the information presented accurately represents the functionality demonstrated in the video.
+
+## Preview
+To preview the resulting documentation, click [here]([url](https://rawcdn.githack.com/dimjea/dbc-project/98a34e188977051a8751de4fece59cc081439cb6/en/en.doc-contact-cards.html)).
