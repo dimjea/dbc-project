@@ -16,5 +16,4 @@ By putting myself in the shoes of the user, I aimed to provide a comprehensive a
 Although screenshots have been deliberately omitted from this repository, the information presented accurately represents the functionality demonstrated in the video.
 
 ## Preview
-To preview the resulting documentation, click [here](https://rawcdn.githack.com/dimjea/dbc-project/98a34e188977051a8751de4fece59cc081439cb6/en/en.doc-contact-cards.html).
-
+To preview the resulting documentation, click [here](https://rawcdn.githack.com/dimjea/dbc-project/217689fb3bfd6691be8ae3c8209b2e341369330e/en/en.doc-contact-cards.html).
